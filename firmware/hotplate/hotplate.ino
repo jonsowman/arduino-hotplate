@@ -58,7 +58,7 @@ void setup()
     windowStartTime = millis();
 
     //initialize the variables we're linked to
-    Setpoint = 250.0F;
+    Setpoint = 230.0F;
 
     //tell the PID to range between 0 and the full window size
     myPID.SetOutputLimits(0, WindowSize);
