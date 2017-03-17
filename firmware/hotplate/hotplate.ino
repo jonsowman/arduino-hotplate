@@ -37,7 +37,7 @@ unsigned long windowStartTime, last_tc_read;
 double Setpoint, Input, Output;
 
 /* Create and configure a PID controller (or P in this case) */
-static PID myPID(&Input, &Output, &Setpoint, 50, 0, 0, DIRECT);
+static PID myPID(&Input, &Output, &Setpoint, 40, 0, 0, DIRECT);
 
 void setup()
 {
@@ -58,7 +58,7 @@ void setup()
     windowStartTime = millis();
 
     //initialize the variables we're linked to
-    Setpoint = 230.0F;
+    Setpoint = 0.0F;
 
     //tell the PID to range between 0 and the full window size
     myPID.SetOutputLimits(0, WindowSize);
@@ -102,6 +102,12 @@ void loop()
         display.println("%");
         display.display();
     }
+
+    /* If within 10 degrees, enable Ki */
+    if( fabs(Input - Setpoint)  < 10.0F )
+      myPID.SetTunings(40, 5, 0);
+    else
+      myPID.SetTunings(50, 0, 0);
 
     /* turn the output pin on/off based on pid output */
     if(millis() - windowStartTime>WindowSize)
