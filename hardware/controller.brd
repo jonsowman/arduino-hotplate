@@ -152,7 +152,7 @@
 <wire x1="50" y1="22.46" x2="47.46" y2="25" width="0" layer="20" curve="90"/>
 <wire x1="47.46" y1="25" x2="2.54" y2="25" width="0" layer="20"/>
 <wire x1="2.54" y1="25" x2="0" y2="22.46" width="0" layer="20" curve="90"/>
-<text x="33.528" y="18.034" size="1.778" layer="21" font="vector" ratio="13">SSR</text>
+<text x="27.432" y="18.034" size="1.778" layer="21" font="vector" ratio="13">SSR</text>
 <text x="44.704" y="11.176" size="1.778" layer="21" font="vector" ratio="13" rot="R90">5V</text>
 <text x="49.784" y="8.382" size="1.778" layer="21" font="vector" ratio="13" rot="R90">+</text>
 <text x="11.938" y="19.812" size="1.778" layer="21" font="vector" ratio="13" rot="R90">ENC</text>
@@ -162,6 +162,7 @@
 <text x="1.778" y="10.16" size="1.778" layer="21" font="vector" ratio="13">REV 1.0</text>
 <text x="40.132" y="18.796" size="1.778" layer="22" font="vector" ratio="13" rot="MR270">J. SOWMAN</text>
 <text x="37.592" y="18.288" size="1.778" layer="22" font="vector" ratio="13" rot="MR270">MAR 2017</text>
+<text x="35.052" y="18.034" size="1.778" layer="21" font="vector" ratio="13">T/C</text>
 </plain>
 <libraries>
 <library name="passives-7351">
@@ -783,11 +784,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="passives-7351" package="C0603-N" value="100n" x="29.21" y="11.938" smashed="yes" rot="R270">
-<attribute name="NAME" x="29.972" y="14.478" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<element name="C1" library="passives-7351" package="C0603-N" value="100n" x="29.464" y="10.414" smashed="yes" rot="R270">
+<attribute name="NAME" x="30.226" y="8.636" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
-<element name="C2" library="passives-7351" package="C0603-N" value="100n" x="14.732" y="13.462" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.494" y="11.684" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<element name="C2" library="passives-7351" package="C0603-N" value="100n" x="15.494" y="14.224" smashed="yes" rot="R270">
+<attribute name="NAME" x="16.256" y="12.446" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="1X05_LONGPADS" value="" x="23.876" y="22.098" smashed="yes" rot="R180">
 <attribute name="VALUE" x="25.146" y="24.765" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
@@ -796,8 +797,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="CONN-09696" x="21.59" y="2.794" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="22.86" y="5.461" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="J3" library="SparkFun-Connectors" package="1X02_LONGPADS" value="" x="37.084" y="22.098" smashed="yes" rot="R180">
-<attribute name="VALUE" x="38.481" y="24.765" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
+<element name="J3" library="SparkFun-Connectors" package="1X02_LONGPADS" value="" x="30.988" y="22.098" smashed="yes" rot="R180">
+<attribute name="VALUE" x="32.385" y="24.765" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
 <element name="J4" library="SparkFun-Connectors" package="2X3" value="AVR_SPI_PROG_3X2PTH" x="36.322" y="4.572" smashed="yes" rot="R180"/>
 <element name="R1" library="passives-7351" package="R0603-N" value="4k7" x="26.924" y="2.032" smashed="yes" rot="R270">
@@ -822,17 +823,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="H1" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="5" y="20"/>
 <element name="H2" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="45" y="20"/>
 <element name="H3" library="holes" package="3,0-PAD" value="MOUNT-PAD-ROUND3.0" x="45" y="5"/>
-<element name="D1" library="SparkFun-LED" package="LED-0603" value="" x="30.988" y="16.256" smashed="yes" rot="R90">
-<attribute name="NAME" x="30.988" y="19.05" size="0.8128" layer="25" font="vector" ratio="13" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="31.623" y="16.256" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D1" library="SparkFun-LED" package="LED-0603" value="" x="31.75" y="14.986" smashed="yes" rot="R90">
+<attribute name="NAME" x="31.75" y="13.208" size="0.8128" layer="25" font="vector" ratio="13" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="32.385" y="14.986" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R3" library="passives-7351" package="R0603-N" value="1k" x="29.21" y="16.256" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.972" y="18.796" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
+<element name="R3" library="passives-7351" package="R0603-N" value="1k" x="29.464" y="15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.226" y="13.462" size="0.8128" layer="25" font="vector" ratio="13" rot="R180"/>
 </element>
-<element name="U2" library="SparkFun-Retired" package="SOIC8" value="MAX6675" x="34.29" y="13.716" rot="R180">
-<attribute name="PROD_ID" value="IC-12512" x="34.29" y="13.716" size="1.778" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
+<element name="U2" library="SparkFun-Retired" package="SOIC8" value="MAX6675" x="36.322" y="12.446" rot="R180">
+<attribute name="PROD_ID" value="IC-12512" x="36.322" y="12.446" size="1.778" layer="27" font="vector" ratio="13" rot="R180" display="off"/>
 </element>
-<element name="R4" library="passives-7351" package="R0603-N" value="4k7" x="38.354" y="13.97" rot="R90"/>
+<element name="R4" library="passives-7351" package="R0603-N" value="4k7" x="40.894" y="12.446" rot="R90"/>
+<element name="J6" library="SparkFun-Connectors" package="1X02_LONGPADS" value="" x="36.068" y="22.098" smashed="yes">
+<attribute name="VALUE" x="34.671" y="19.431" size="0.6096" layer="27" font="vector" ratio="20"/>
+</element>
 </elements>
 <signals>
 <signal name="ROTENC_A">
@@ -884,16 +888,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J5" pad="2"/>
 <contactref element="U2" pad="4"/>
 <contactref element="R4" pad="2"/>
-<wire x1="38.354" y1="14.77" x2="47.498" y2="11.176" width="0" layer="19" extent="1-1"/>
-<wire x1="32.385" y1="16.3322" x2="38.354" y2="14.77" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="11.138" x2="32.385" y2="16.3322" width="0" layer="19" extent="1-1"/>
-<wire x1="26.5938" y1="10.9474" x2="29.21" y2="11.138" width="0" layer="19" extent="1-1"/>
+<wire x1="40.894" y1="13.246" x2="47.498" y2="11.176" width="0" layer="19" extent="1-1"/>
+<wire x1="34.417" y1="15.0622" x2="40.894" y2="13.246" width="0" layer="19" extent="1-1"/>
+<wire x1="29.464" y1="9.614" x2="34.417" y2="15.0622" width="0" layer="19" extent="1-1"/>
+<wire x1="26.5938" y1="10.9474" x2="29.464" y2="9.614" width="0" layer="19" extent="1-1"/>
 <wire x1="26.5938" y1="12.5476" x2="26.5938" y2="10.9474" width="0" layer="19" extent="1-1"/>
 <wire x1="24.384" y1="2.832" x2="26.5938" y2="10.9474" width="0" layer="19" extent="1-1"/>
 <wire x1="26.924" y1="1.232" x2="24.384" y2="2.832" width="0" layer="19" extent="1-1"/>
 <wire x1="18.1102" y1="13.3604" x2="26.5938" y2="12.5476" width="0" layer="19" extent="1-1"/>
 <wire x1="18.1102" y1="11.7602" x2="18.1102" y2="13.3604" width="0" layer="19" extent="1-1"/>
-<wire x1="14.732" y1="12.662" x2="18.1102" y2="13.3604" width="0" layer="19" extent="1-1"/>
+<wire x1="15.494" y1="13.424" x2="18.1102" y2="13.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="21.336" y1="22.098" x2="18.1102" y2="13.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="36.322" y1="2.032" x2="26.924" y2="1.232" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="2.794" x2="18.1102" y2="11.7602" width="0" layer="19" extent="1-1"/>
@@ -933,37 +937,47 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="U1" pad="16"/>
 <contactref element="J4" pad="1"/>
 <contactref element="U2" pad="7"/>
-<wire x1="36.322" y1="4.572" x2="34.925" y2="11.0998" width="0" layer="19" extent="1-1"/>
-<wire x1="25.146" y1="8.7122" x2="34.925" y2="11.0998" width="0" layer="19" extent="1-1"/>
+<wire x1="36.322" y1="4.572" x2="36.957" y2="9.8298" width="0" layer="19" extent="1-1"/>
+<wire x1="25.146" y1="8.7122" x2="36.957" y2="9.8298" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="U1" pad="17"/>
 <contactref element="J4" pad="3"/>
 <contactref element="U2" pad="5"/>
-<wire x1="26.5938" y1="10.16" x2="32.385" y2="11.0998" width="0" layer="19" extent="1-1"/>
-<wire x1="33.782" y1="4.572" x2="32.385" y2="11.0998" width="0" layer="19" extent="1-1"/>
+<wire x1="33.782" y1="4.572" x2="34.417" y2="9.8298" width="0" layer="19" extent="1-1"/>
+<wire x1="26.5938" y1="10.16" x2="34.417" y2="9.8298" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SSR_OUT">
 <contactref element="U1" pad="13"/>
 <contactref element="J3" pad="2"/>
-<wire x1="22.7584" y1="8.7122" x2="34.544" y2="22.098" width="0" layer="19" extent="1-1"/>
+<wire x1="22.7584" y1="8.7122" x2="28.448" y2="22.098" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U1" pad="12"/>
 <contactref element="D1" pad="A"/>
-<wire x1="21.9456" y1="8.7122" x2="30.988" y2="15.379" width="0" layer="19" extent="1-1"/>
+<wire x1="21.9456" y1="8.7122" x2="31.75" y2="14.109" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D1" pad="C"/>
 <contactref element="R3" pad="2"/>
-<wire x1="29.21" y1="17.056" x2="30.988" y2="17.133" width="0" layer="19" extent="1-1"/>
+<wire x1="29.464" y1="16.04" x2="31.75" y2="15.863" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TC_CS">
 <contactref element="U2" pad="6"/>
 <contactref element="U1" pad="7"/>
 <contactref element="R4" pad="1"/>
-<wire x1="33.655" y1="11.0998" x2="38.354" y2="13.17" width="0" layer="19" extent="1-1"/>
-<wire x1="18.1102" y1="10.9474" x2="33.655" y2="11.0998" width="0" layer="19" extent="1-1"/>
+<wire x1="35.687" y1="9.8298" x2="40.894" y2="11.646" width="0" layer="19" extent="1-1"/>
+<wire x1="18.1102" y1="10.9474" x2="35.687" y2="9.8298" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U2" pad="2"/>
+<contactref element="J6" pad="2"/>
+<wire x1="36.957" y1="15.0622" x2="38.608" y2="22.098" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="U2" pad="3"/>
+<contactref element="J6" pad="1"/>
+<wire x1="35.687" y1="15.0622" x2="36.068" y2="22.098" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

@@ -4196,6 +4196,7 @@ Dead Prototype: IC-12512&lt;br.</description>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R4" library="passives-7351" deviceset="RESISTOR" device="0603-N" value="4k7"/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
+<part name="J6" library="SparkFun-Connectors" deviceset="CONN_02" device="PTH3"/>
 </parts>
 <sheets>
 <sheet>
@@ -4237,6 +4238,7 @@ Dead Prototype: IC-12512&lt;br.</description>
 <instance part="GND9" gate="1" x="78.74" y="12.7" smashed="yes" rot="R270"/>
 <instance part="R4" gate="G$1" x="111.76" y="30.48" rot="R90"/>
 <instance part="SUPPLY8" gate="G$1" x="111.76" y="35.56" smashed="yes"/>
+<instance part="J6" gate="G$1" x="73.66" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -4535,6 +4537,20 @@ Dead Prototype: IC-12512&lt;br.</description>
 <wire x1="111.76" y1="25.4" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="22.86" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
 <label x="114.3" y="22.86" size="1.27" layer="95" font="vector" xref="yes"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="T-"/>
+<pinref part="J6" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="7.62" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="T+"/>
+<pinref part="J6" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="5.08" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
